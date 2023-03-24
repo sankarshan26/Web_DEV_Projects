@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport
+    " content="widht=device-width , initial-scale=1, user-scalable= yes" />
+
+    <link rel="stylesheet" href="styling.css" />
+    <title>Maths Game</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="scr" id="scr">
+                <div class="score" id="score">Score: <span id="scorevalue">0</span></div>
+            </div>
+            <div class="correct" id="correct">Correct Answer</div>
+            <div class="wrong" id="wrong">Wrong Answer</div>
+            <div class="question" id="question">
+                <p><b>A X B</b></p>
+            </div>
+            <div class="answers" id="answers">
+                <div class="option" id="option1">A1</div>
+                <div class="option" id="option2">A2</div>
+                <div class="option" id="option3">A3</div>
+                <div class="option" id="option4">A4</div>
+            </div>
+            <div class="footer">
+                <button id="startgame" class="startgame" type="button" onclick="fun()">
+                    Start Game
+                </button>
+                <div class="time" id="time">
+                    Time Left :
+                    <span class="remvalue" id="remvalue" style="font-weight: bold">60</span>sec
+                </div>
+            </div>
+            <div class="gameover" id="gameover"></div>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+
+</html>
