@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator
+  </title>
+  <style>
+    * {
+      box-sizing: border-box ;
+      margin: 0%;
+    }
+    body{
+      /* background: rgb(37,48,59); */
+      height: 100%;
+      background: rgb(249, 249, 222);
+      
+    }
+    .cont{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container.outerbody {
+      min-width: 250px;
+      width: 50vw;
+      background: rgb(63, 65, 73);
+      max-width: 300px;
+      border-radius: 0.9rem;
+    }
+
+    .main_screen{
+      background-color: white;
+      height: 80px;
+      margin: 1rem;
+      font-weight: bold;
+      text-align: end;
+      padding: 0.9rem;
+      font-size: 48px;
+      overflow: hidden;
+    
+    }
+    .keypad_container{
+      
+      padding: 0rem 1rem;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin: 0rem 1rem ;
+      padding-left: 0.3rem;
+      font-weight: 800;
+      color: white; ;
+    }
+    .AC{
+      display: flex;
+      flex-wrap: wrap;
+      background: rgb(250, 80, 1);
+      padding: 0.7rem 0.96rem;
+      border-radius: 42%;
+      margin: 0rem 1rem;
+      text-align: center;
+    }
+    .AC:hover {
+      box-shadow: 1.5px -1.5px 0.9rem #ee3333;
+    }
+    .del{
+      display: flex;
+      flex-wrap: wrap;
+      background: orange;
+      padding: 0.7rem ;
+      border-radius: 42%;
+      margin: 0rem 1rem;
+      align-content: center;
+      justify-content: center;
+    }
+    .del:hover {
+      box-shadow: 1.5px -1.5px 0.9rem #dcd7d7;
+    }
+    .left{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-row-gap: 20px;
+      grid-column-gap: 10px;
+      /* background: pink; */
+      padding: 1.2rem ;
+      width: 75%;
+      max-width: 75%;
+      /* display: inline-block; */
+    }
+    .right{
+      /* background: purple; */
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 20px;
+      grid-column-gap: 10px;
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem;
+      padding-right: 1rem;
+      width: 25%;
+      max-width: 25%;
+      
+    }
+
+    .right > .btn{
+      font-weight: 900;
+      border-radius: 100%;
+      font-size: 24px;
+      
+      padding: 0.5rem ;
+      
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      background: orange;
+      color: white;
+    }
+
+    .btn{
+      background: rgb(109, 111, 120);
+    }
+    .btn:hover {
+      box-shadow: 1.5px -1.5px 0.9rem #dcd7d7;
+    }
+    .left > .btn{
+      font-weight: 800;
+      border-radius: 100%;
+      font-size: 24px;
+      
+      color: aliceblue;
+      padding: 0.5rem  ;
+      
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      
+    }
+
+    #equal {
+      color: rgb(68, 240, 68);
+      font-weight: 800;
+    }
+
+    @media screen and (max-width: 600px){
+     .left{
+      padding: 1.2rem 0.67rem;
+     } 
+     .top{
+      padding-left: 0rem;
+     }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="cont">
+  <div class="container outerbody">
+    <!-- main screen  -->
+    <div class="main_screen" id="main_screen">0
+    </div>
+
+    <!-- keypad -->
+    <div class="top">
+      <div class="AC" id="AC" onclick="restart()"> <p>AC</p></div>
+      <div class="del" id="del" onclick="dele()"><p>DEL</p></div>
+    </div>
+    <div class="keypad_container">
+      
+      <div class="left">
+        <!-- numbers  -->
+        <div class="btn" id="nine" onclick="num('9')">9</div>
+        <div class="btn" id="eight" onclick="num('8')">8</div>
+        <div class="btn" id="seven" onclick="num('7')">7</div>
+        <div class="btn" id="six" onclick="num('6')">6</div>
+        <div class="btn" id="five" onclick="num('5')">5</div>
+        <div class="btn" id="four" onclick="num('4')">4</div>
+        <div class="btn" id="three" onclick="num('3')">3</div>
+        <div class="btn" id="two" onclick="num('2')">2</div>
+        <div class="btn" id="one" onclick="num('1')">1</div>
+        <div class="btn" id="dot" onclick="num('.')">.</div>
+        <div class="btn" id="zero" onclick="num('0')">0</div>
+        <div class="btn" id="equal" onclick="Show_value()">=</div>
+      </div>
+
+      <div class="right">
+        <div class="btn" id="/" onclick="operation(4)">/</div>
+        <div class="btn" id="*" onclick="operation(3)">*</div>
+        <div class="btn" id="+" onclick="operation(1)">+</div>
+        <div class="btn" id="-" onclick="operation(2)">-</div>
+      </div>
+      </div>
+          
+    </div>
+  </div>
+  <script type="text/javascript">
+
+    //disabling right click
+    document.addEventListener("contextmenu", (event) => {
+         event.preventDefault();
+      });
+
+
+
+    function play (){
+      console.log(document.getElementById("main_screen").innerText)
+    }
+
+    var opr = ""; // for holding operator sign
+    var d = 0; // for deleting
+    let power = 0; // for calculating the power of 10 while dealing with decimal numbers
+    let val = 0; // final calculated value
+    let op1 = 0 ; // operand
+    let decimal = 0 ; // for decimal point
+    
+
+    function disp (){
+      
+      document.getElementById("main_screen").innerHTML= "<p>"+ op1.toString(10) +"</p>";
+    }
+
+    function restart(){
+     opr = 0;
+     count = 0;
+     power = 0;
+     val = 0;
+     op1 = 0 ;
+     decimal = 0 ;
+     disp();
+    }
+    
+    function num (s){
+      if (s=='.') {
+        decimal += 1 ;
+        if (decimal>1) document.getElementById("main_screen").innerHTML="<p>Error</p>";
+        //if 2 or more decimal points are inserted then it throws error
+        else  document.getElementById("main_screen").innerHTML= "<p>"+op1.toString(10)+".</p>";
+       }
+      else {
+        if (decimal > 0) { power++;
+        var k = Number(s);
+        k = k/(10**power);
+        op1+=k;
+        op1 = roundu(op1 , power);
+        
+        } else {
+          op1 = op1*10 + Number(s);
+          op1 = roundu(op1 , power);
+
+        }
+        //play();
+        console.log(op1);
+        disp();
+      }
+            
+    }
+
+    function operation(n){
+      console.log("pressed");
+      if (n == 1) {
+        //addition
+        val = op1 ;
+        val = roundu(val , power);
+        opr = '+';
+        document.getElementById("main_screen").innerHTML= "<p>"+op1.toString(10)+ opr + "</p>";
+        op1= 0;
+        decimal = 0 ;
+        power = 0;
+        console.log(val);
+      } else if (n == 2) {
+        //Subtraction
+        val = op1 ;
+        val = roundu(val , power);
+        opr = '-';
+        document.getElementById("main_screen").innerHTML= "<p>"+op1.toString(10)+ opr + "</p>";
+        op1= 0;
+        decimal = 0 ;
+        power = 0;
+        console.log(val);
+      } else if (n == 3) {
+        //Multiplication
+        val = op1 ;
+        val = roundu(val , power);
+        opr = '*';
+        document.getElementById("main_screen").innerHTML= "<p>"+op1.toString(10)+ opr + "</p>";
+        op1= 0;
+        decimal = 0 ;
+        power = 0;
+        console.log(val);
+      } else if (n == 4) {
+        //Division
+        val = op1 ;
+        val = roundu(val , power);
+        opr = '/';
+        document.getElementById("main_screen").innerHTML= "<p>"+op1.toString(10)+ opr + "</p>";
+        op1= 0;
+        decimal = 0 ;
+        power = 0;
+        console.log(val);
+      }
+    }
+
+    //if number has decimal point then take out decimal part by taking mod of number by 1 and store it in t
+    //now multiply t with t*(10**power) and store it in t.
+    //find the mod of with 10 and store it in t.
+    //now t is divided by 10**power .
+    //subtract t from operator.
+    function dele (){
+      var t;
+      if(op1%1!=0) {
+        //decimal part is there.
+        t= op1%1; // t has decimal part
+        t=t*(10**power);
+        t=t%10;
+        t=t/(10**power);
+        op1=op1-t;
+        power--;
+        if(power==0) decimal=0;
+        op1 = roundu(op1 , power);
+        console.log(op1);
+        disp();
+      } else {
+        op1=op1- op1%10;
+        op1/=10;
+        op1 = roundu(op1 , power);
+        disp();
+      }
+      
+
+    }
+
+    function Show_value(){
+      switch (opr){
+        case '+' : val+=op1; break; 
+        case '-' : val-=op1; break;
+        case '*' : val*=op1; break;
+        case '/' : val/=op1; break;
+      }
+      document.getElementById("main_screen").innerHTML= "<p>"+val+"</p>" ;
+      op1 = val ;
+    }
+
+    function roundu (number , dec){
+      var rou = Math.pow(10,dec);
+      return Math.round(number*rou)/rou ;
+    }
+  </script>
+</body>
+</html>
