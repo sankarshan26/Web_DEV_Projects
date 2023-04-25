@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <!-- icon -->
+    <link rel = "icon" href = "images/logo.png"  type = "image/x-icon">
+    <!-- imported the css file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font family import -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="parent">
+      <section class="container">
+        <div class = "box" id="one" onclick="Mark(this)"></div>
+        <div class= "box" id="two" onclick="Mark(this)"></div>
+        <div class= "box" id="three" onclick="Mark(this)"></div>
+        <div class= "box" id="four" onclick="Mark(this)"></div>
+        <div class= "box" id="five" onclick="Mark(this)"></div>
+        <div class= "box" id="six" onclick="Mark(this)"></div>
+        <div class= "box" id="seven" onclick="Mark(this)"></div>
+        <div class= "box" id="eight" onclick="Mark(this)"></div>
+        <div class= "box" id="nine" onclick="Mark(this)"></div>
+      </section>
+      <div class="decision">
+      <div class="verdict" id="decision">
+      </div>
+      <div class="reset" id="reset" onclick="restart()">Restart</div>
+    </div>
+    </div>
+
+    <!-- imported js file below -->
+    <script src="counter.js">
+      
+    </script>
+  </body>
+</html>

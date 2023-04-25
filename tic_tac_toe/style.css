@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    
+  }
+  
+  body {
+    background-image: linear-gradient( 250deg, #899cff 0%, #ff9efa 36%, #ffe4b3 100% );
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+        .parent {
+          height: inherit; /*to make the height of div as that of the its parent that is body*/
+          /* border: 3px solid black ; */
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          align-content: center;
+          justify-content: center;
+          /* padding: 10px; */
+          overflow: hidden;
+        }
+  
+       .container {
+          margin: 20px;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction:row;
+          align-content: center;
+          justify-content: center;
+          /* border: 5px solid black; */
+          /* width: 50%; */
+          height: 50%;
+          /* padding: 5rem; */
+          
+        }
+  
+        
+        #one {
+          border-right: 3px solid rgb(40,36,36);
+          border-bottom: 3px solid rgb(40,36,36);
+        }
+        #two {
+          border-right: 3px solid rgb(40,36,36);
+          border-left: 3px solid rgb(40,36,36);
+          border-bottom: 3px solid rgb(40,36,36);
+        }
+        #three {
+          border-left: 3px solid rgb(40,36,36);
+          border-bottom: 3px solid rgb(40,36,36);
+        }
+        #four {
+          border-right: 3px solid rgb(40,36,36);
+          border-top: 3px solid rgb(40,36,36); 
+          border-bottom: 3px solid rgb(40,36,36);
+        }
+        #five {
+          border: 3px solid rgb(40,36,36);
+        }
+        #six{
+          border-top: 3px solid rgb(40,36,36); 
+          border-left: 3px solid rgb(40,36,36);
+          border-bottom: 3px solid rgb(40,36,36);
+        }
+        #seven {
+          border-top: 3px solid rgb(40,36,36);
+          border-right: 3px solid rgb(40,36,36);
+        }
+        #eight {
+          border-right: 3px solid rgb(40,36,36);
+          border-left: 3px solid rgb(40,36,36);
+          border-top: 3px solid rgb(40,36,36);
+        }
+        #nine {
+          border-left: 3px solid rgb(40,36,36);
+          border-top: 3px solid rgb(40,36,36);
+        }
+        .parent .container .box {
+          padding: 10px;
+          display: flex;
+          flex-wrap: wrap;
+          align-content: center;
+          justify-content: center;
+          
+          height: 30%;
+          width: 30%;
+          text-align: center;
+          font-size: xx-large;
+        }
+        .decision {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          row-gap: 20%;
+          
+        }
+        .verdict {
+           padding: 5px;
+           font-size: 1,5rem;
+           border-radius: 5px;
+           /* border: 3px solid #62f522; */
+           text-align: center;
+           background-color: #bef482;
+           visibility: hidden;
+        }
+        .reset {
+          background-color: #bbc9f7;
+          border: 3px solid #88a3fc;
+          border-radius: 5px;
+          padding: 5px;
+          visibility: hidden;
+        }
+        @media screen and (max-width: 2000px) {
+          .parent  .container .box {
+            min-width: 40px;
+          }
+  }
+
+
+
