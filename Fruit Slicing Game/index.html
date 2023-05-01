@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="cs()">
+  <div class="game_window">
+    <div class="boxes">
+    <div class="score">Score : 0</div>
+    <div class="lives"></div>
+  </div>
+    <div class="screen" id="screen">
+      <img id="fruit" >
+    </div>
+    <div class="gameover">Game Over</div>
+  </div>
+    <div class="buttons">
+    <button class="btn" id="start">Start</button>
+    <!-- <button class="btn" id="pause">Pause</button></div> -->
+    <audio id="sound">
+    <source >
+      <source src="audio/punch.mp3"> </source>
+    </audio>
+    <audio id="gameover_sound">
+      <source >
+        <source src="audio/gameover.mp3"> </source>
+      </audio>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <script src="app.js" >  </script>
+</body>
+</html>
