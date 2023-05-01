@@ -4,3 +4,4 @@ Maths Game - https://sankarshan26.github.io/web_dev_projects/Maths%20Website%20G
 Calculator - https://sankarshan26.github.io/web_dev_projects/Calculator/  <br />
 Tic Tac Toe Game - https://sankarshan26.github.io/web_dev_projects/tic_tac_toe/ <br />
 Timer - https://sankarshan26.github.io/web_dev_projects/timer/  <br />
+Fruit Slicing Game - https://sankarshan26.github.io/web_dev_projects/Fruit%20Slicing%20Game/ <br />
