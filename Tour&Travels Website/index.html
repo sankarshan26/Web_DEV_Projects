@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+    <!-- animate on scroll library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    
+    <!-- importing font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- imported the css file -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Font family import -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- swiperjs cdn -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <!-- OWL carousel cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Travel Website</title>
+
+
+  </head>
+  <body>
+    <div class="fullcontent">
+    <!-- header starts -->
+   <header class="header">
+    <nav class="navbar">
+<span class="logo nav-left">
+  <img src="images/logo.png" alt="" class="img-logo"></span>
+
+  <ul class="nav-list nav-center">
+    <li> <a href="#" class="nav-item">Home</a></li>
+    <li> <a href="#about_us" class="nav-item">About Us</a></li>
+    <li class="packages"> <a href="#Available_packages" class="nav-item ">Packages</a>
+      
+      
+      <ul class="sub-package">
+        
+        <li class="package-type_"><a href="#Available_packages" id="domestic" class="package-type">Domestic</a></li>
+        <li class="package-type_"><a href="#Available_packages" id="international" class="package-type">International</a>
+      </li>
+    
+    </ul>
+    </li>
+
+    <li> <a href="#" class="nav-item">Book</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <button class="login btn login1" id="login1">Login</button>
+    <button class="signup btn signup1" id="signup1">Signup</button>
+  </div>
+  <div class="small">
+  <div id="menu-btn" class="fas fa-bars">  
+  </div>
+</div>
+    </nav>
+    <ul class="nav-list_menu">
+      <li class="list-item"> <a href="#" class="nav-item_">Home</a></li>
+      <li class="list-item"> <a href="#aboutus" class="nav-item_">About Us</a></li>
+      <li class="list-item"> <a href="#Available_packages" class="nav-item_">Packages</a></li>
+      <li class="list-item"> <a href="#" class="nav-item_">Book</a></li>
+      <li class="list-item"> <a href="#" class="nav-item_ login1">Login</a></li>
+      <li class="list-item"> <a href="#" class="nav-item_ signup1">Signup</a></li>
+    </ul>
+   </header>
+
+   <!-- header ends -->
+   
+   <!-- hero section starts -->
+   <div>
+   <section  class="hero" id="hero">
+    <div class="container content" data-aos="fade-right" data-aos-duration="2000">
+      <h1 class="heading"> Wonderlust Travels: Discover the World's Hidden Gems</h1>
+      <div class="description">
+        Experience the world with our expert travel guides. From breathtaking landscapes to fascinating cultures, our trips are tailored to your interests. Book your adventure now and make memories that last a lifetime."
+      </div>
+      <div class="exp-btn"><div class="exp-btn2">
+        <button class="explore">Explore</button></div>
+      </div>
+    </div>
+
+    
+    <div class="container image" data-aos="fade-left" data-aos-duration="2000" >
+      <img src="images/walking-woods.gif" class="image_">
+    </div>
+   </section>
+  </div>
+
+   <!-- hero section ends -->
+
+   <!-- About us  -->
+
+   <div >
+    <section class="about" id="aboutus">
+      <div class="heading1" class="about_us" id="about_us" data-aos="fade-up" data-aos-duration="2000">About Us</div>
+      <div class="description" class="about_us" id="about_us" data-aos="fade-up" data-aos-duration="1500">
+        At Wonderlust Travels, we believe that every journey is an opportunity for exploration, growth, and unforgettable experiences. With our commitment to exceptional service and attention to detail, we are dedicated to creating bespoke travel experiences that inspire and delight. Our team of experienced travel consultants specializes in crafting tailor-made itineraries, meticulously designed to cater to your unique interests and preferences. From luxurious accommodations to thrilling adventure activities, we offer a wide range of services to ensure your journey is seamless and memorable. With our expert-guided tours and immersive cultural experiences, you'll discover the true essence of each destination, connecting with its people, traditions, and natural wonders. Our dedicated visa assistance and travel insurance services provide peace of mind, allowing you to travel with confidence and security. At Wonderlust Travels, we are passionate about helping you explore the world beyond boundaries, curating extraordinary journeys that create lifelong memories. Join us on this remarkable adventure, and let Wonderlust Travels be your trusted companion in fulfilling your wanderlust dreams.
+      </div>
+    </section>
+  </div>
+
+   <!-- About us ends -->
+
+
+  <div>
+    <section class="our_services " id="our_services" >
+      <div class="heading1" data-aos="fade-up" data-aos-duration="2000">Our Services</div>
+      <div class="bgimg" data-aos="fade-up" data-aos-duration="2000">
+      <div class="card_section ">
+
+        <div class="card" data-aos="zoom-in-up" data-aos-duration="1500">
+          <div class="card_image">
+            <img src="https://images.pexels.com/photos/1659437/pexels-photo-1659437.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="card_img">
+          </div>
+          <div class="card_heading">
+            Adventure Activities
+          </div>
+          <div class="card_description" data-aos="zoom-out-down" data-aos-duration="1500">
+            For thrill-seekers and outdoor enthusiasts, we offer a wide range of exhilarating adventure activities. From hiking breathtaking trails to diving into vibrant underwater worlds, skiing down powdery slopes to zip-lining through lush jungles, our adventure experiences will get your adrenaline pumping and create unforgettable memories.
+          </div>
+        </div>
+
+        <div class="card" data-aos="zoom-in-up" data-aos-duration="1500">
+          <div class="card_image">
+            <img src="https://images.pexels.com/photos/15303766/pexels-photo-15303766.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card_img">
+          </div>
+          <div class="card_heading">
+            Accommodation Booking
+          </div>
+          <div class="card_description" data-aos="zoom-out-down" data-aos-duration="1500">
+            We understand that finding the perfect accommodation is essential for a comfortable and enjoyable trip. Our wide range of options caters to all budgets and preferences. Whether you prefer luxurious resorts, charming boutique hotels, or authentic homestays, we'll assist you in finding the ideal accommodation that suits your needs, ensuring a relaxing and restful stay.
+          </div>
+        </div>
+      
+
+        <div class="card" data-aos="zoom-in-up" data-aos-duration="1500">
+          <div class="card_image">
+            <img src="https://images.pexels.com/photos/15388106/pexels-photo-15388106.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card_img">
+          </div>
+          <div class="card_heading">
+            Tailor-Made Itineraries
+          </div>
+          <div class="card_description" data-aos="zoom-out-down" data-aos-duration="1500">
+            Our experienced travel consultants will curate personalized itineraries based on your preferences and interests. Whether you seek cultural immersion, adventure, relaxation, or a mix of everything, we'll design a unique travel plan just for you. Every detail, from accommodations to activities, will be carefully arranged to ensure a seamless and unforgettable journey.
+          </div>
+        </div>
+
+        <div class="card" data-aos="zoom-in-up" data-aos-duration="1500">
+          <div class="card_image">
+            <img src="https://images.pexels.com/photos/5225247/pexels-photo-5225247.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card_img">
+          </div>
+          <div class="card_heading">
+           Guided Tours
+          </div>
+          <div class="card_description" data-aos="zoom-out-down" data-aos-duration="1500" >
+            Discover the wonders of your chosen destination with our expert-guided tours. Our knowledgeable local guides will lead you through iconic landmarks and hidden gems, sharing captivating stories and insider insights along the way. Immerse yourself in the culture, history, and natural beauty of each destination as you explore with confidence and in-depth understanding.
+          </div>
+        </div>
+
+        <div class="card" data-aos="zoom-in-up" data-aos-duration="1500">
+          <div class="card_image">
+            <img src="https://images.pexels.com/photos/54216/pexels-photo-54216.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card_img">
+          </div>
+          <div class="card_heading">
+           Cultural Experiences
+          </div>
+          <div class="card_description" data-aos="zoom-out-down" data-aos-duration="1500" >
+            Immerse yourself in the local culture and traditions with our curated cultural experiences. Learn to cook regional delicacies through interactive cooking classes, witness captivating traditional performances, engage with local artisans, and explore bustling markets where you can shop for unique souvenirs. These experiences offer a deeper understanding of the destination and create lasting connections.
+          </div>
+        </div>
+
+        <div class="card" data-aos="zoom-in-up" data-aos-duration="1500">
+          <div class="card_image">
+            <img src="https://img.freepik.com/premium-photo/red-metal-protection-shield-character-mascot-with-orange-travel-suitcase-yellow-background-3d-rendering_476612-18353.jpg?size=626&ext=jpg&ga=GA1.2.904894787.1682796781&semt=ais" alt="" class="card_img">
+          </div>
+          <div class="card_heading">
+           Travel Insurance
+          </div>
+          <div class="card_description" data-aos="zoom-out-down" data-aos-duration="1500">
+            Your safety and well-being are our top priorities. We offer comprehensive travel insurance options to protect you against unforeseen circumstances during your trip. Our insurance coverage includes medical emergencies, trip cancellations, lost baggage, and more, giving you peace of mind and ensuring that you're well taken care of throughout your journey.
+          </div>
+        </div>
+
+        <div class="card" data-aos="zoom-in-up" data-aos-duration="1500">
+          <div class="card_image">
+            <img src="https://images.pexels.com/photos/7658355/pexels-photo-7658355.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card_img">
+          </div>
+          <div class="card_heading">
+          24/7 Customer Support
+          </div>
+          <div class="card_description" data-aos="zoom-out-down" data-aos-duration="1500">
+            We provide round-the-clock customer support to address any travel-related queries or emergencies. Our dedicated team is available to assist you at any time, ensuring that you have a reliable point of contact throughout your trip. From pre-departure concerns to on-the-road assistance, we're just a phone call away, ready to provide prompt and effective support.
+          </div>
+        </div>
+
+      </div>
+    </div>
+   
+    </section> </div>
+  
+
+   <!-- Our Services ends  -->
+
+
+
+<!-- Available packages  -->
+
+<div class="packages_ " id="Available_packages">
+  <div class="heading1" data-aos="fade-up" data-aos-duration="2000">Available Packages</div>
+  <div class="packs" >
+  <div class=" owl-carousel owl-theme" >
+
+<div class="item">
+<div class="card onemore" data-aos="zoom-in-up" data-aos-duration="1500"
+id="African_Odyssey">
+  <div class="card_image">
+    <img src="https://images.unsplash.com/photo-1650397306410-32183656e4c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw0MzE4NjJ8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" class="card_img">
+  </div>
+  <div class="card_heading">
+    African Odyssey
+  </div>
+  <div class="card_description" data-aos="zoom-out-down" data-aos-duration="1500">Embark on an extraordinary 15-day journey through the captivating African continent with our "African Odyssey" travel package. Discover the wonders of Kenya's Maasai Mara, witness the majestic Victoria Falls in Zimbabwe, explore the vibrant city of Cape Town in South Africa, and encounter the diverse wildlife of Tanzania's Serengeti National Park. Immerse yourself in the rich culture, breathtaking landscapes, and vibrant traditions of Africa. With experienced guides, luxurious accommodations, and seamless logistics, this package promises an unforgettable adventure. Book now and embark on the journey of a lifetime in Africa!
+  </div>
+</div></div>
+
+<div class="item">
+<div class="card onemore" data-aos="zoom-in-up" data-aos-duration="1500"
+id="Ultimate_European_Escape">
+  <div class="card_image">
+    <img src="https://images.unsplash.com/photo-1569671767315-4650a61c04ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8RXVyb3BlYW4lMjB0b3VyaXN0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="" class="card_img">
+  </div>
+  <div class="card_heading">
+   Ultimate European Escape
+  </div>
+  <div class="card_description" data-aos="zoom-out-down" data-aos-duration="1500">Embark on the Ultimate European Escape and immerse yourself in the diverse beauty of the continent. From the romantic canals of Venice to the breathtaking landscapes of the Swiss Alps, this 15-day journey will take you through the iconic cities of Paris, Rome, Barcelona, and Amsterdam. Experience world-class art, indulge in mouthwatering cuisine, and wander through charming streets. With expert guides and luxurious accommodations, this is the perfect opportunity to create lifelong memories. Don't miss out on this unforgettable European adventure. Book your escape today!
+  </div>
+</div></div>
+
+<div class="item">
+<div class="card  onemore" data-aos="zoom-in-up" data-aos-duration="1500"
+id="Enchanting_India">
+  <div class="card_image">
+    <img src="https://images.unsplash.com/photo-1669628182335-4c50980f419d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fEluZGlhbiUyMHRvdXJpc218ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="" class="card_img">
+  </div>
+  <div class="card_heading">
+   Enchanting India
+  </div>
+  <div class="card_description" data-aos="zoom-out-down" data-aos-duration="1500">Experience the magic of India with our "Enchanting India" travel package. Discover the iconic Taj Mahal, explore the vibrant streets of Delhi, cruise along the serene backwaters of Kerala, and witness the spirituality of Varanasi. Immerse yourself in rich cultural traditions, savor authentic cuisine, and be captivated by ancient palaces and temples. Our package includes expert guides, comfortable accommodations, and seamless transportation. Embark on a journey of a lifetime and let India enchant your soul. Book now for an unforgettable adventure!
+  </div>
+</div></div>
+
+<div class="item">
+<div class="card onemore" data-aos="zoom-in-up" data-aos-duration="1500" id="Royal_Rajasthan_Escapade">
+  <div class="card_image">
+    <img src="https://images.unsplash.com/photo-1653495483345-ebfc28815a8d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fFJhamFzdGhhbiUyMHRvdXJpc218ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="" class="card_img">
+  </div>
+  <div class="card_heading">
+   Royal Rajasthan Escapade
+  </div>
+  <div class="card_description" data-aos="zoom-out-down" data-aos-duration="1500">Unveil the opulence of Royal Rajasthan on an extraordinary escapade like no other. Prepare to be captivated by the majestic forts, palaces, and vibrant bazaars. Immerse yourself in the royal heritage as you traverse through the golden sands of the Thar Desert. Indulge in traditional Rajasthani hospitality and savor authentic flavors that will tantalize your taste buds. Let the grandeur of Rajasthan leave you spellbound on our exclusive Royal Rajasthan Escapade. Join us for an unforgettable journey that promises to ignite your sense of wonder and create memories to cherish forever
+  </div>
+</div></div>
+
+
+<div class="item">
+<div class="card onemore" data-aos="zoom-in-up" data-aos-duration="1500"
+id="North-Eastern_Wonders">
+  <div class="card_image">
+    <img src="https://images.unsplash.com/photo-1613699510848-0cf477468a5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8a2F6aXJhbmdhJTIwbmF0aW9uYWwlMjBwYXJrfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="" class="card_img">
+  </div>
+  <div class="card_heading">
+   North-Eastern Wonders
+  </div>
+  <div class="card_description" data-aos="zoom-out-down" data-aos-duration="1500">Embark on a breathtaking 9-day journey through North-Eastern India with our "North-Eastern Wonders" travel package. Explore the enchanting Kaziranga National Park, witness the wettest place on Earth in Cherrapunjee, experience the serenity of Gangtok and Darjeeling, and indulge in the beauty of Shillong. Immerse yourself in diverse cultures, spot incredible wildlife, and marvel at picturesque landscapes. With expert guides, seamless logistics, and unforgettable experiences, this package promises an extraordinary adventure. Book now and create lifelong memories in North-Eastern India!
+  </div>
+</div></div>
+</div>
+</div>
+</div>
+
+
+
+<!-- Available packages end  -->
+
+
+
+
+  <!-- Our Customers say -->
+  <div class="testimonials">
+     <div class="heading1">Our Customer's Say</div>
+     <div class="tescard">
+      <!-- Test card will have 3 sections  -->
+      <!-- 1.image 2.Name 3. Short description -->
+          <div class="tes_image"  >
+            <img src="https://cdn.pixabay.com/photo/2019/04/26/17/33/happy-4158123_640.jpg" alt="" class="image_tes" data-aos="zoom-in" data-aos-duration="1500">
+          </div>
+          <div class="tes_content" class="image_tes" data-aos="zoom-in" data-aos-duration="1500">
+            <p class="des">Our trip to Paris with Wonderlust Travels exceeded all expectations! From the iconic landmarks to the charming streets, every moment was filled with enchantment. The expert guides provided fascinating insights, and the seamless planning made the experience truly unforgettable. Thank you for creating memories that will last a lifetime. Highly recommended!</p>
+            <h6 class="name">Erik Jones</h6>
+          </div>
+    </div>
+
+<div class="tescard rev">
+  <!-- Test card will have 3 sections  -->
+  <!-- 1.image 2.Name 3. Short description -->
+  <div class="tes_image"  >
+    <img src="https://images.unsplash.com/photo-1600271772269-c3d903024972?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="" class="image_tes2" data-aos="zoom-in" data-aos-duration="1500">
+  </div>
+      <div class="tes_content" class="image_tes" data-aos="zoom-in" data-aos-duration="1500">
+        <p class="des">From the majestic mountains to the crystal-clear lakes, every moment was filled with awe-inspiring beauty. The expert guides shared fascinating stories, and the meticulous planning made our journey seamless and unforgettable. We are grateful for the priceless memories that will forever hold a special place in our hearts.</p>
+        <h6 class="name">Mary Stokes</h6>
+      </div>
+      
+</div>
+
+<div class="tescard">
+  <!-- Test card will have 3 sections  -->
+  <!-- 1.image 2.Name 3. Short description -->
+      <div class="tes_image"  >
+        <img src="https://images.unsplash.com/photo-1629897587479-c09fb836bd79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="" class="image_tes" data-aos="zoom-in" data-aos-duration="1500">
+      </div>
+      <div class="tes_content" class="image_tes" >
+        <!-- data-aos="fade-left" data-aos-duration="1500" -->
+        <p class="des">Our journey to London with Wanderlust Adventures surpassed all our expectations! From the renowned attractions to the picturesque streets, each moment was brimming with enchantment.We are grateful for the cherished memories that will endure for a lifetime.  </p>
+        <h6 class="name">Kim Sutherland</h6>
+      </div>
+</div>
+</div>
+  <!-- Our Customer say end -->
+
+
+  
+
+
+
+   <!-- Footer section  -->
+   <div class="foo"   >
+    <!-- data-aos="zoom-in-down" data-aos-duration="1500" -->
+  <footer class="footer">
+   
+      <ul class="sec">
+        <li class="items"> <a href="#aboutus"> About Us</a></li>
+        <li class="items"> <a href="#our_services"> Services</a></li>
+        <li class="items"> <a href="#Available_packages"> Packages</a></li>
+
+      </ul>
+    
+      <ul class="sec">
+        <li>
+          <div class="contact">
+            <div class="email items"> <a href="mailto:sankarshanmishra102017@gmail.com">abc@gmail.com</a> </div>
+            <div class="phn items"><a href="tel:+91-9794710302">+91-xxxxxxxxxx</a></div>
+            <div class="social items">
+              <a href="https://www.instagram.com/sankarshan_mishra_652/" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/128/2111/2111491.png" alt="" class="insta image"></a>
+              <img src="https://cdn-icons-png.flaticon.com/128/1077/1077041.png" alt="" class="fb image">
+              <a href="https://www.linkedin.com/in/sankarshan-mishra-579438257/" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/128/2111/2111532.png" alt="" class="linkedin image"></a>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="sec">
+        <li class="items"><a href="#">Cookie Policy</a></li>
+        <li class="items"><a href="#">Privacy Policy</a></li>
+        <li class="items"><a href="#">Terms and Conditions</a></li>
+      </ul>
+    
+  </footer>
+  <div class="copyright">&#169; Copyright Sankarshan 2023</div>
+</div>
+   <!-- Footer section ends -->
+  </div>
+  
+
+  <!-- Login/Signup Form  -->
+  <div class="form_main-container" >
+    <div class="_form_img_container">
+      <img src="https://img.freepik.com/free-vector/my-password-concept-illustration_114360-4294.jpg?size=626&ext=jpg&ga=GA1.2.904894787.1682796781&semt=ais" alt="" class="form_img">
+    </div>
+    <div class="form_container">
+      <form action="" class="login_form">
+        <div class="heading_form">
+        <h2 class="form-heading" id="login_sec">Login</h2>
+        <h2 class="form-heading" id="signup_sec">Sign Up</h2></div>
+        <div class="form_data">
+        <label for="">Username </label> <br>
+        <input type="text" placeholder="John">
+        <label for="" class="only_signup">Email </label> <br> 
+        <input type="email" class="only_signup" placeholder="abc@gmail.com">
+        <label for="">Password</label> <br>
+        <input type="password" placeholder="###########">
+        <a href="" style="text-align: center;">
+        <button class="sub-btn submit" >Submit</button></a></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Pop for successful login sign up  form  -->
+  <div class="popup_main_container" id="popup">
+    
+      <img src="https://cdn-icons-png.flaticon.com/128/4436/4436481.png" alt="" class="tick_img">
+    
+    <h2 class="popup">Thank You !</h2>
+    <div class="message"> <p class="log">Login successfull !</p></div>
+    <button class="popup_btn">Ok</button>
+  </div>
+
+  <!-- End Login Form  -->
+
+  <!-- details of travel plans  -->
+  
+  
+    
+  <div class="detailedview" id="North-Eastern_Wonders1">
+    <div class="title_" style="text-align: center;"><h2 class="details_heading" style="margin: 2rem 0rem;"> North-Eastern Wonders</h2></div>
+    <div class="daywise">
+    <div class="detailedview_image"><img src="https://images.pexels.com/photos/13691355/pexels-photo-13691355.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></div>
+    <div class="detailedview_content">
+  
+      <div class="details">
+  <div  class="day">
+  <b>Day 1:</b>Arrive in Guwahati, the gateway to North-East India, and transfer to your hotel
+  Explore the city's bustling markets and visit the Kamakhya Temple, a prominent pilgrimage site</div><br><div class="day">
+    <b>Day 2-3:</b> Majestic Kaziranga National Park
+  
+  Embark on an exciting journey to Kaziranga National Park, a UNESCO World Heritage Site
+  Enjoy thrilling jeep and elephant safaris to spot the iconic one-horned rhinoceros and other wildlife
+  Immerse yourself in the picturesque landscapes and serene environment of the park</div><br><div  class="day">
+    <b>Day 4-5:</b> Picturesque Shillong and Cherrapunjee
+  
+  Travel to the charming city of Shillong, also known as the "Scotland of the East"
+  Explore the vibrant markets and visit the beautiful Umiam Lake
+  Venture to Cherrapunjee, known as the wettest place on Earth, and marvel at its stunning waterfalls and lush greenery
+  Visit the Living Root Bridges, a unique natural wonder</div><br>
+  <div class="day">
+    <b>Day 6-7:</b> Enchanting Gangtok and Tsomgo Lake
+  
+  Fly to Gangtok, the capital of Sikkim, nestled amidst the Himalayan mountains
+  Take in panoramic views of the snow-capped peaks and visit the famous Tsomgo Lake
+  Explore the charming streets of Gangtok, visit monasteries, and indulge in local cuisine</div><br>
+  <div  class="day">
+    <b>Day 8-9:</b> Serene Darjeeling and the Toy Train
+  
+  Journey to Darjeeling, famous for its tea plantations and panoramic views of the Kanchenjunga mountain range
+  Experience a memorable ride on the Darjeeling Himalayan Railway, also known as the Toy Train
+  Visit the Tiger Hill viewpoint to witness a breathtaking sunrise over the mountains</div><br>
+  </div>
+      </div>
+    </div>
+    <div class="book_nowbtn"><button class="book-now sub-btn">Book</button> <button class="close sub-btn" style="background: #ff3535;">Close</button></div>
+  </div>
+
+
+
+  <div class="detailedview" id="Royal_Rajasthan_Escapade1">
+    <div class="title_" style="text-align: center;"><h2 class="details_heading" style="margin: 2rem 0rem;"> Royal Rajasthan Escapade</h2></div>
+    <div class="daywise">
+    <div class="detailedview_image"><img src="https://images.pexels.com/photos/5355764/pexels-photo-5355764.jpeg?auto=compress&cs=tinysrgb&w=400" alt=""></div>
+    <div class="detailedview_content">
+  
+      <div class="details">
+  <div class="day">
+  <b>Day 1-2:</b>Arrival in Delhi, explore the historic sites including Red Fort, Jama Masjid, and Qutub Minar.</div><br>
+  <div class="day">
+    <b>Day 3-4:</b>Travel to Jaipur, the Pink City, and visit the majestic Amber Fort, Hawa Mahal, and City Palace.
+  </div>
+  <br>
+    <div class="day">
+    <b>Day 5-6:</b>Head to Jodhpur and explore the impressive Mehrangarh Fort, Jaswant Thada, and the vibrant markets.</div><br>
+  <div  class="day">
+    <b>Day 7-8:</b>Discover the desert city of Jaisalmer, visit the golden sand dunes, and explore the magnificent Jaisalmer Fort.</div><br>
+  <div  class="day">
+    <b>Day 9-10: </b>Proceed to Udaipur, the City of Lakes, and enjoy the serene boat ride on Lake Pichola. Visit the grand City Palace and Saheliyon Ki Bari.</div><br>
+  
+  <div  class="day">
+    <b>Day 11-12: </b>Travel to Pushkar and experience the vibrant atmosphere of the Pushkar Camel Fair. Visit the famous Brahma Temple.</div><br>
+  
+  <div  class="day">
+    <b>Day 13-14: </b>Explore the city of Bikaner, known for its stunning palaces and forts, including Junagarh Fort and Lalgarh Palace.</div><br>
+    <div  class="day">
+      <b>Day 15: </b>Return to Delhi for departure.</div><br>
+  </div>
+ 
+  </div>
+      </div>
+      <div class="book_nowbtn"><button class="book-now sub-btn">Book</button> <button class="close sub-btn" style="background: #ff3535;">Close</button></div>
+    </div>
+
+
+
+  <div class="detailedview" id="African_Odyssey1">
+    <div class="title_" style="text-align: center;"><h2 class="details_heading" style="margin: 2rem 0rem;"> African Odyssey</h2></div>
+    <div class="daywise">
+    <div class="detailedview_image"><img src="https://images.pexels.com/photos/6056056/pexels-photo-6056056.jpeg?auto=compress&cs=tinysrgb&w=400" alt=""></div>
+    <div class="detailedview_content">
+  
+      <div class="details">
+  <div class="day">
+  <b>Day 1-3:</b>Arrive in Nairobi and explore the vibrant capital city. Visit the Nairobi National Park and learn about local wildlife conservation efforts. Enjoy cultural performances and savor authentic Kenyan cuisine.</div><br>
+  <div class="day">
+    <b>Day 4-6:</b>Travel to the iconic Maasai Mara Reserve. Witness the annual wildebeest migration, spot the Big Five on thrilling game drives, and interact with the Maasai people to learn about their traditions and way of life.
+  </div>
+  <br>
+    <div class="day">
+    <b>Day 7-9:</b>Fly to Victoria Falls, one of the seven natural wonders of the world. Marvel at the awe-inspiring cascades, take a thrilling helicopter ride over the falls, and enjoy river cruises on the Zambezi River.</div><br>
+  <div  class="day">
+    <b>Day 10-12:</b>Fly to Cape Town, known for its stunning natural beauty and vibrant culture. Explore Table Mountain, visit Robben Island, take a scenic drive along the Cape Peninsula, and indulge in wine tastings in the renowned Cape Winelands.</div><br>
+  <div  class="day">
+    <b>Day 13-15:</b>Fly to Tanzania and embark on an unforgettable safari adventure in the Serengeti National Park. Witness the great wildebeest migration, spot lions, elephants, and giraffes, and enjoy immersive cultural experiences with local tribes.</div><br>
+  </div>
+  
+  </div>
+  
+      </div>
+      <div class="book_nowbtn"><button class="book-now sub-btn">Book</button> <button class="close sub-btn" style="background: #ff3535;">Close</button></div>
+    </div>
+
+  
+    <div class="detailedview" id="Ultimate_European_Escape1">
+      <div class="title_" style="text-align: center;"><h2 class="details_heading" style="margin: 2rem 0rem;"> Ultimate European Escape</h2></div>
+      <div class="daywise">
+      <div class="detailedview_image"><img src="https://images.pexels.com/photos/15597550/pexels-photo-15597550/free-photo-of-city-dawn-sunset-eiffel-tower.jpeg?auto=compress&cs=tinysrgb&w=400" alt=""></div>
+      <div class="detailedview_content">
+    
+        <div class="details">
+    <div class="day">
+    <b>Day 1: Arrival in Paris -</b>Take a leisurely stroll along the Seine River and explore the charming neighborhoods and the iconic Eiffel Tower for breathtaking views of the city</div><br>
+    <div class="day">
+      <b>Day 2-3: Exploring Paris -</b>Enjoy a guided tour of the Louvre Museum, discover the romantic streets of Montmartre and visit the historic Sacré-Cœur Basilica. Indulge in delectable French cuisine at local bistros and experience Parisian café culture.
+    </div>
+    <br>
+      <div class="day">
+      <b>Day 4-5: Venice, Italy -</b>Fly to the enchanting city of Venice, known for its picturesque canals and romantic ambiance, take a gondola ride along the Grand Canal and marvel at the stunning architecture and explore the hidden gems of Venice, including St. Mark's Square and the Doge's Palace</div><br>
+    <div  class="day">
+      <b>Day 6-7: Swiss Alps Adventure - </b>Travel to Switzerland and immerse yourself in the breathtaking beauty of the Swiss Alps, enjoy thrilling outdoor activities like hiking, skiing, or snowboarding and relax in a cozy mountain chalet and savor trditional Swiss delicacies.</div><br>
+    <div  class="day">
+      <b>Day 8-9: London, United Kingdom - </b>Fly to vibrant London and experience the perfect blend of history and modernity and visit iconic landmarks such as the Buckingham Palace, Big Ben, and the Tower of London and explore the vibrant neighborhoods of Camden Market and Covent Garden.</div><br>
+    </div>
+    
+    </div>
+    
+        </div>
+        <div class="book_nowbtn"><button class="book-now sub-btn">Book</button> <button class="close sub-btn" style="background: #ff3535;">Close</button></div>
+      </div>
+
+
+      <div class="detailedview" id="Enchanting_India1">
+        <div class="title_" style="text-align: center;"><h2 class="details_heading" style="margin: 2rem 0rem;"> Enchanting India</h2></div>
+        <div class="daywise">
+        <div class="detailedview_image"><img src="https://images.pexels.com/photos/15597550/pexels-photo-15597550/free-photo-of-city-dawn-sunset-eiffel-tower.jpeg?auto=compress&cs=tinysrgb&w=400" alt=""></div>
+        <div class="detailedview_content">
+      
+          <div class="details">
+      <div class="day">
+      <b>Day 1: Arrival in Delhi -</b>Arrive in the bustling city of Delhi and transfer to a comfortable hotel, explore the vibrant streets of Old Delhi, visiting historic landmarks like Jama Masjid and Red Fort and experience the local flavors with a street food tour, savoring delicious chaat and kebabs.
+      </div><br>
+      <div class="day">
+        <b>Day 2-3: Agra and the Taj Mahal -</b>Journey to Agra and witness the mesmerizing Taj Mahal, one of the Seven Wonders of the World, Explore the grand Agra Fort, a UNESCO World Heritage Site, with its fascinating history and visit the serene Fatehpur Sikri, an abandoned Mughal city known for its architectural brilliance.
+      </div>
+      <br>
+        <div class="day">
+        <b>Day 4-5: Jaipur, the Pink City -</b>Travel to Jaipur and immerse yourself in the rich culture and heritage of Rajasthan and discover the majestic Amber Fort, where you can enjoy an elephant ride to the fort entrance and explore the City Palace, Hawa Mahal, and Jantar Mantar, showcasing Jaipur's architectural marvels</div><br>
+      <div  class="day">
+        <b>Day 6-7: Udaipur, the City of Lakes - </b>Fly to the romantic city of Udaipur, famous for its stunning lakes and palaces, Cruise along Lake Pichola and marvel at the picturesque scenery and the iconic Lake Palace and visit the magnificent City Palace and stroll through the colorful markets of Udaipur</div><br>
+      <div  class="day">
+        <b>Day 8-9: Mumbai and the Gateway of India - </b>Fly to the vibrant city of Mumbai, the entertainment and financial capital of India, explore the bustling streets of Colaba and visit the iconic Gateway of India and experience the bustling markets of Crawford Market and indulge in mouthwatering street food</div><br>
+      </div>
+      </div>
+      
+          </div>
+          <div class="book_nowbtn"><button class="book-now sub-btn">Book</button> <button class="close sub-btn" style="background: #ff3535;">Close</button></div>
+        </div>
+    
+  
+
+
+
+  <!-- End of Detailed Travel Plans  -->
+  
+  
+
+  
+  
+   
+   
+   <!-- Illustration by <a href="https://icons8.com/illustrations/author/kP9rc8JiBCcz">Irene M. Ray</a> from <a href="https://icons8.com/illustrations">Ouch!</a> -->
+   
+
+    <!-- imported js file below -->
+    
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    
+    <!-- Owl-Carousel --><script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    
+    <script src="./counter.js"></script>
+
+    <!-- for animate on scroll  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  </body>
+</html>
